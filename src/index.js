@@ -4,9 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const post ={
+  title: "dinos",
+  author: "stealthy stego",
+  body: "checkout this body property",
+  comments: ['first','great post','hire this author']
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App post={post}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
